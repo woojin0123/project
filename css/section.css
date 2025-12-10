@@ -1,0 +1,47 @@
+@import url(reset.css);
+
+html {
+    scroll-behavior: smooth;
+}
+#section {
+    background: url("../images/visual-06.png") 50% 50%/cover no-repeat;
+}
+#section .logo {
+    background-attachment: fixed;
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: start;
+    padding-top: 100px;
+}
+#section .text {
+    background: #fff;
+    width: 100%;
+    white-space: pre-wrap;
+    font-size: 2rem;
+    text-align: left;
+    padding: 0 60px;
+    color: #333;
+}
+#section .t1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+#section .t1 span {
+    color: #E83828;
+    font-size: 4rem;
+}
+#section .t2 {
+    text-align: right;
+}
+#section .t2 span {
+    color: #333;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#section a {
+    text-align: center;
+}
