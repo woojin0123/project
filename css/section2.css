@@ -1,0 +1,65 @@
+@import url(reset.css);
+
+body {
+    color: #fff;
+}
+section .sec1 {
+    background: #000;
+    width: 100%;
+    max-width: 1520px;
+    text-align: center;
+}
+section .sec1 .pork {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 220px);
+    gap: 20px 0px;
+}
+section .sec1 .pork .sale {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+section .sec1 img {
+    width: 200px;
+    border-radius: 20px;
+}
+section .sec2 .slider {
+    
+}
+section .sec2 .slider_bottom {
+    display: flex;
+    justify-content: center;
+}
+section .sec2 .slider_bottom img {
+    width: 430px;
+}
+        .slider1 {
+            width: 860px;
+            height: 100%;
+            overflow: hidden;
+            margin: 50px auto;
+            border: 20px solid rebeccapurple;
+        }
+        .slider_bottom {
+            width: 430px;
+        }
+        .slides {
+            display: flex;
+            width: calc(100% * 4); /* 연산자 앞뒤 띄어쓰기 */
+            height: 100%;
+            /* animation-name: slideRoll;
+            animation-duration: 9s;
+            animation-iteration-count: infinite; */
+            /* 속기속성 */
+            /* animation: 이름 동작시간 [반복횟수]; */
+            animation: slideRoll 9s infinite ease-in-out;
+        }
+        @keyframes slideRoll {
+            0% {transform:translateX(0);}
+            11.11% {transform:translateX(-25%);}
+            33.33% {transform:translateX(-25%);}
+            44.44% {transform:translateX(-50%);}
+            66.66% {transform:translateX(-50%);}
+            77.77% {transform:translateX(-75%);}
+            100% {transform:translateX(-75%);}
+        }

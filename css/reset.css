@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-body,
+body, div,
 h1, h2, h3,
 ul, li, i, img {
     margin: 0;

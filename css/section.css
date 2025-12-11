@@ -1,47 +1,90 @@
 @import url(reset.css);
 
-html {
+html, body {
     scroll-behavior: smooth;
+    font-family: "Pretendard";
 }
-#section {
+#section1 {
+    display: flex;
+    background-attachment: fixed;
     background: url("../images/visual-06.png") 50% 50%/cover no-repeat;
 }
-#section .logo {
-    background-attachment: fixed;
-    display: flex;
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: start;
-    padding-top: 100px;
+.section {
+width: 100vw;
+height: 100vh;
+position: relative;
+justify-content: center;
+align-items: center;
 }
-#section .text {
-    background: #fff;
-    width: 100%;
+#section1 .logo {
+    position: absolute;
+    top: 25%;
+}
+#section1 .logo_img {
+    filter: drop-shadow(0px 5px 10px #fff);
+}
+
+/* section2 */
+#section2 {
+    background: url(../images/image50.png) 50% 50%/cover no-repeat
+}
+#section2 .text {
     white-space: pre-wrap;
     font-size: 2rem;
     text-align: left;
-    padding: 0 60px;
+    padding: 90px 60px;
     color: #333;
 }
-#section .t1 {
-    font-size: 3rem;
-    font-weight: 700;
-}
-#section .t1 span {
-    color: #E83828;
+#section2 .t1 {
     font-size: 4rem;
+    font-weight: 700;
+    padding-bottom: 150px;
 }
-#section .t2 {
+#section2 .t1 span {
+    color: #E83828;
+    font-size: 5rem;
+}
+#section2 .t2 {
     text-align: right;
 }
-#section .t2 span {
+#section2 .t2 span {
     color: #333;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 700;
 }
-
-#section a {
+#section3 {
+    background: #FFF3F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#section3 .mall_box {
+    background: url();
     text-align: center;
 }
+
+#section3 .logo_mall {
+    transform: scale(2.5);
+    margin: 80px 50px;
+    
+}
+#section3 .btn {
+    width: 350px;
+    border: 2px solid #E83828;
+    border-radius: 10px;
+    padding: 15px 20px;
+    transition: 0.3s;
+    background: #fff;
+}
+#section3 .btn a {
+    color: #E83828;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+#section3 .btn:hover {
+background: #E83828;
+}
+#section3 .btn:hover a {
+color: #fff;
+}
+
