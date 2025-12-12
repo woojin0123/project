@@ -4,7 +4,7 @@ body {
     color: #fff;
 }
 section .sec1 {
-    background: #000;
+    /* background: #000; */
     width: 100%;
     max-width: 1520px;
     text-align: center;
@@ -23,43 +23,80 @@ section .sec1 img {
     width: 200px;
     border-radius: 20px;
 }
-section .sec2 .slider {
-    
+
+/* sec2 */
+section .sec2 h3 {
+    display: inline-block;
+    border-radius: 20px;
+    background: #E83828;
+    color: #fff;
+}
+section .slider1_text {
+    margin-bottom: 10px;
+    margin-top: 40px;
+    padding: 3px 15px;
+}
+section .slider2_text {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    /* background: #fff; */
+}
+section .slider2_text h3 {
+    padding: 3px 10px;
+}
+
+/* slider */
+section .sec2 .slider1 img {
+    width: 860px;
+    height: 500px;
 }
 section .sec2 .slider_bottom {
     display: flex;
     justify-content: center;
 }
-section .sec2 .slider_bottom img {
-    width: 430px;
+section .sec2 .slides img {
+    width: 400px;
 }
-        .slider1 {
-            width: 860px;
-            height: 100%;
-            overflow: hidden;
-            margin: 50px auto;
-            border: 20px solid rebeccapurple;
+section .slider1 {
+    width: 860px;
+    height: 500px;
+    overflow: hidden;
+    margin: 10px auto;
+    border-radius: 25px;
+}
+section .slides1 {
+    display: flex;
+    width: calc(100% * 1); /* 연산자 앞뒤 띄어쓰기 */
+    height: 100%;
+    animation: slideRoll 5s infinite ease-in-out;
+}
+@keyframes slideRoll {
+    0% {transform:translateX(0);}
+    50% {transform:translateX(0);}
+    100% {transform:translateX(-100%);}
+}
+section #slider_bottom {
+    display: flex;
+    justify-content: center;
+}
+section #slider_bottom .slider2 {
+    width: 400px;
+    height: 700px;
+    overflow: hidden;
+    margin: 0 30px;
+    border-radius: 23px;
+}
+section #slider_bottom .slides {
+    display: flex;
+    width: calc(100% * 2); /* 연산자 앞뒤 띄어쓰기 */
+    height: 100%;
+    animation: slideRoll2 8s infinite ease-in-out;
         }
-        .slider_bottom {
-            width: 430px;
-        }
-        .slides {
-            display: flex;
-            width: calc(100% * 4); /* 연산자 앞뒤 띄어쓰기 */
-            height: 100%;
-            /* animation-name: slideRoll;
-            animation-duration: 9s;
-            animation-iteration-count: infinite; */
-            /* 속기속성 */
-            /* animation: 이름 동작시간 [반복횟수]; */
-            animation: slideRoll 9s infinite ease-in-out;
-        }
-        @keyframes slideRoll {
-            0% {transform:translateX(0);}
-            11.11% {transform:translateX(-25%);}
-            33.33% {transform:translateX(-25%);}
-            44.44% {transform:translateX(-50%);}
-            66.66% {transform:translateX(-50%);}
-            77.77% {transform:translateX(-75%);}
-            100% {transform:translateX(-75%);}
-        }
+@keyframes slideRoll2 {
+    0% {transform:translateX(0);}
+    25% {transform:translateX(-400px);}
+    50% {transform:translateX(-400px);}
+    75% {transform:translateX(-100%);}
+    100% {transform:translateX(-100%);}
+}
