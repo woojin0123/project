@@ -1,5 +1,41 @@
 @import url(reset.css);
 
+/* 초기화(reset) */
+* {
+    box-sizing: border-box;
+}
+
+body, div,
+h1, h2, h3, p, span,
+ul, li, i, img {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    list-style: none;
+}
+
+body {
+    font: 0.9375rem/1.6 "NanumBarunGothic", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    vertical-align: middle;
+    object-fit: cover;
+}
+input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
 body {
     color: #000;
 }
