@@ -75,8 +75,11 @@ html, body {
 
 /* header */
 #header {
+    
     position: relative;
+    margin-bottom: 20px;
 }
+
 #header .inner {
     max-width: 1520px;
     margin: 0 auto;
@@ -258,6 +261,7 @@ logo {
     position: relative;
     padding: 32px 0;
     color: #787878;
+    margin-top: 20px;
 }
 #footer a {
     color: #787878;
