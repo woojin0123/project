@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    scroll-behavior: smooth;
+}
+
+body,
+h1,h2,h3,ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+    object-fit: cover;
+}
+#cart .inner {
+    max-width: 1520px;
+    display: block;
+}
+#cart .inner,
+#cart .inner a {
+    color: #686767;
+    font-size: 0.75rem;
+}
+
+#cart .product {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    border-bottom: 1px solid #686767;
+}
+
