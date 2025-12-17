@@ -291,31 +291,44 @@ logo {
     padding-left: 16px;
 }
 #footer .info {
-    font-size: 0.875rem;
+    margin-top: 8px;
+    font-size: 0.8rem;
 }
 #footer .call_box, .bank_box {
     background: #E83828;
     border-radius: 25px;
-    width: 400px;
+    width: 450px;
     padding: 10px 20px;
-    margin: 10px 0;
     color: #fff;
 }
 #footer .bank_time {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0 80px;
+    gap: 0 94px;
+    margin: 0 16px;
 }
-
 #footer .call_box {
-    height: 105px;
+    height: 130px;
 }
 #footer .call_box li {
     text-align: left;
 }
+#footer .call_center {
+    margin-top: 18px;
+}
+#footer .call_center h2 {
+    margin: 0 16px;
+}
 #footer .bank_box {
+    margin: 15px 0 5px 0;
+    height: 90px;
     border-radius: 20px;
-    height: 70px;
+}
+#footer .bank_info h3 {
+    margin: 10px 16px 0 16px;
+}
+#footer .bank_name {
+    margin-right: 16px;
 }
 #footer .call_center, .bank_info {
     display: flex;
