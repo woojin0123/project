@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* 폰트어썸 라이브러리 */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css);
+
+/* 초기화(reset) */
+* {
+    box-sizing: border-box;
+}
+html, body {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 16px;
+}
+
+body, div,
+h1, h2, h3, p, span,
+ul, li, i, img {
+    margin: 0;
+    padding: 0;
+}
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+img {
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+body{
+	margin-top: 100px;
+	line-height: 1.6
+}
+.container{
+	width: 800px;
+	margin: 0 auto;
+}
+
+/* list */
+#product .list {
+    max-width: 1260px;
+    margin: 0 auto;
+}
+#product .top p,
+#product .top a {
+    color: #686767;
+    font-size: 0.75rem;
+}
+#product .top span {
+    color: #222;  
+}
+#product .container {
+    width: 100%;
+    text-align: left;
+}
+#product .container p {
+    margin: 20px 0;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #222;
+} 
+
+#product ul.tabs{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+#product ul.tabs li{
+    background: none;
+    color: #222;
+    display: inline-block;
+    padding: 10px 15px;
+	cursor: pointer;
+}
+#product ul.tabs li.current{
+	color: #e83828;
+    text-decoration: underline;
+    font-weight: bold;
+    text-underline-offset: 4px;
+}
+#product .tab-content{
+	display: none;
+	padding: 15px;
+}
+#product .tab-content.current {
+    display: inherit;
+}
+
+#product .pork_container,
+#product .beef_container {
+    margin-top: 50px;
+    width: 100%;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px; 
+}
+#product .pork_container .preview,
+#product .beef_container .preview {
+    width: 100%;
+}
+
+#product .meat_text {
+    margin-top: 10px;
+    text-align: left;
+}
+#product .meat_text h3 {
+    font-size: 1rem;
+    font-weight: 300;
+}
+#product .meat .price {
+    font-size: 1rem;
+    font-weight: bold;
+}
+#product .price span {
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: #666;
+}

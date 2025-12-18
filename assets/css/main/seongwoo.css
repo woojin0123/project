@@ -1,21 +1,17 @@
 @charset "utf-8";
 
-/* main body {
+.seongwoo body {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 
     margin: 0;
     padding: 0;
-} */
+}
 
 .seongwoo ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-/* main {
-    width: 1520px;
-    margin: 0 auto;
-} */
 .seongwoo {
     width: 1520px;
     margin: 0 auto;
@@ -47,7 +43,7 @@
     height: 650px;
 }
 /* 슬라이드 */
-.seongwoo .left-slides , .seongwoo .right-slides{
+.seongwoo .left-slides , .right-slides{
     display: flex;
     width: calc(100% * 5);
     height: 100%;
@@ -83,7 +79,7 @@
 }
 /*기존이미지 변경시 js 사용하던지 div로 태그변경해서 해볼것*/
 
-.seongwoo .main-recommend img , .seongwoo .main-gift-set img{
+.seongwoo .main-recommend img , .main-gift-set img{
     width: 58px;
     height: 58px;
 }
@@ -91,7 +87,7 @@
     width: 535px;
     height: 666px;
 }
-.seongwoo h1 , .seongwoo main p {
+.seongwoo h1 , .seongwoo p {
     text-align: center;
 }
 .seongwoo .sub-menu-list {
@@ -141,18 +137,61 @@
     width: 290px;
     height: 360px;
 }
-.seongwoo .menu-list{
+/* 사이드메뉴 */
+.seongwoo .menu-list-container .menu-list {
     position: relative;
-    width: 250px;
-    height: 300px;
-    border:1px solid red;
+    top: 500px;
+    padding: 20px 20px;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 240px;
+    height: 280px;
+    
+    transform: translateX(1662px);
+    /* transform:translateY(50px) */
 }
-.seongwoo .menu-list img {
+.seongwoo .menu-list .icon-box {
+    display: grid;
+    
+}
+.seongwoo .side-menu {
+    position: fixed;
+    top: 0;
+    left: 0px;
+    right: -240px;
+    width: 240px;
+    height: 100vh;
+    
+    transform: translateX(100%); 
+    transition: transform 0.3s ease;
+}
+.seongwoo .check-btn {
     position: absolute;
+    top: 500px;
+    left:1635px;
+}
+.seongwoo .side-menu.open {
+    transform: translateX(0);
+}
+.seongwoo .side-menu.open .menu-list{
+   border:2px dotted red;
+}
+
+/* chat */
+.seongwoo .sub-menu-wrap {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px; /* 좌우간 간격 */
+}
+
+
+/* 사이드메뉴 end */
+.seongwoo .menu-list  {
     width: 50px;
     height: 50px;
 }
-.seongwoo .menu-list li:nth-of-type(1) .icon-box img  {
+.seongwoo .menu-list li:nth-of-type(1)   {
     top: 10px;
     left: 20px;
 }
@@ -175,6 +214,8 @@
 .seongwoo .menu-list li:nth-of-type(6) .icon-box img  {
     top: 170px;
     left: 20px;
+    width: 100px;
+    height: 58px;
 }
 
 
@@ -211,13 +252,6 @@
     padding:30px 0 37px 60px
 }
 
-
-/* chat */
-.seongwoo .sub-menu-wrap {
-    display: flex;
-    align-items: flex-start;
-    gap: 40px; /* 좌우간 간격 */
-}
 
 /* 왼쪽 메뉴 영역 */
 .seongwoo .sub-menu-left {
