@@ -75,8 +75,11 @@ html, body {
 
 /* header */
 #header {
+    
     position: relative;
+    margin-bottom: 20px;
 }
+
 #header .inner {
     max-width: 1520px;
     margin: 0 auto;
@@ -84,9 +87,8 @@ html, body {
     justify-content: space-between;
     padding-top: 40px;
     margin-bottom: 20px;
-    /* background: #555; */
 }
-#logo {
+logo {
     position: absolute;
 }
 #header .top_link {
@@ -101,9 +103,8 @@ html, body {
 /* 메인 메뉴바 */
 #gnb {
     display: flex;
-    /* background: lightblue; */
     position: relative;
-    max-width: 1320px;
+    max-width: 1520px;
     margin: 0 auto;
     align-items: center;
     justify-content: space-between;
@@ -264,7 +265,6 @@ html, body {
 }
 #footer a {
     color: #787878;
-    
 }
 #footer li {
     font-size: 0.75rem;
@@ -275,6 +275,8 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    /* padding: 16px; */
+    /* background: #555; */
 }
 #footer .footer_bottom {
     margin-top: 70px;
@@ -288,10 +290,9 @@ html, body {
 #footer .service a:not(:first-of-type) {
     padding-left: 16px;
 }
-#footer .inner_info {
+#footer .info {
     margin-top: 8px;
     font-size: 0.8rem;
-    text-align: left;
 }
 #footer .call_box, .bank_box {
     background: #E83828;
@@ -313,7 +314,7 @@ html, body {
     text-align: left;
 }
 #footer .call_center {
-    margin-top: 14px;
+    margin-top: 18px;
 }
 #footer .call_center h2 {
     margin: 0 16px;

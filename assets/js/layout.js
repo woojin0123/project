@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                     <li><a href="">도드람한돈</a></li>
                                     <li><a href="">THE짙은</a></li>
                                     <li><a href="">캔돈</a></li>
-                                    <li><a href="/about.html">회사 소개</a></li>
+                                    <li><a href="/about.html">Dodrammall</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
                             </div> <!-- //service -->
                             <div class="info">
                                 <p>주소:경기도 이천시 부발읍 경충대로 1917 도드람테마파크 상호:도드람양돈협동조합<br>조합장:박광욱 사업자등록번호: 126-82-10806 <a
-                                        href="mailto:mall@dodram.co.kr"> 전자우편:mall@dodram.co.kr</a><br> 개인정보보호책임자:홍은숙<a
+                                        href="mailto:mall@dodram.co.kr">전자우편:mall@dodram.co.kr</a><br> 개인정보보호책임자:홍은숙<a
                                         herf="tel:1551-3349"> 대표번호:1551-3349</a> 팩스:031-636-0763<br>통신판매업
                                     신고번호:2018-경기이천-0257호<br><br> copyright©dodrammall.com All Right Reserved. Hosting by
                                     NHN고도(주)
@@ -100,8 +100,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="inner_box">
                         <div class="call_box">
                             <div class="call_center">
-                                <h2>CALL CENTER</h3>
-                                    <h2>1551-3349</h2>
+                                <h2>CALL CENTER</h2>
+                                <h2>1551-3349</h2>
                             </div>
                             <ul class="bank_time">
                                 <li>평일 AM 09:00 ~ PM 06:00 </li>

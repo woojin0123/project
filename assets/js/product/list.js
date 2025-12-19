@@ -7,7 +7,7 @@ pork_list.forEach((item) => {
       <a class="link" href="${item.link}">
         <img class="preview" src="${item.preview}" alt="">
         <div class="meat_text">
-          <h3 class="title">${item.title}</h3>
+          <h3 class="title">도드람한돈 ${item.title}</h3>
         </div>
       </a>
       <p class="price">
