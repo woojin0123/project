@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* 폰트어썸 라이브러리 */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css);
+
+/* 초기화(reset) */
+* {
+    box-sizing: border-box;
+}
+html, body {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-size: 16px;
+}
+
+body, div,
+h1, h2, h3, p, span,
+ul, li, i, img {
+    margin: 0;
+    padding: 0;
+}
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+img {
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+body{
+	margin-top: 100px;
+	line-height: 1.6
+}
+.container{
+	width: 800px;
+	margin: 0 auto;
+}
+
+/* list */
+#product {
+    color: #333;
+}
+#product hr {
+    border: none;
+    height: 1px;
+    background-color: #e5e5e5;
+}
+#product .list_top a {
+    color: #686767;
+    font-size: 0.75rem;
+}
+#product .list {
+    max-width: 1260px;
+    margin: 50px auto;
+}
+#product .top_inner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+}
+#product .top_inner img {
+    height: 625px;
+    padding: 0 50px;
+    border: 1px solid #e5e5e5;
+}
+#product .top_right {
+
+}
+#product .title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+#product .title h2 {
+    font-size: 1.4rem;
+}
+#product .title input {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    padding: 0 15px;
+}
+#product .item_info {
+    font-size: 0.9rem;
+}
+#product .item_info dl {
+    display: flex;
+
+}
+#product .item_info dl span {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+#product .item_info dt {
+    width: 130px;
+    color: #666;
+}
+#product .item_info dd {
+    flex-grow: 1;
+    margin-left: 0;
+    color: #222;
+}
+#product ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+#product .info_text {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+/* #product {
+    white-space: pre-wrap;
+} */
