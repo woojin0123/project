@@ -46,6 +46,7 @@ main {
 }
 #cart .product p span {
     color: #E65548;
+    font-weight: bold;
 }
 #cart .product img {
     margin: 0 16px;
