@@ -87,3 +87,48 @@ main {
 #cart .price span {
     color: #E65548;
 }
+#cart .btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#cart .btn_left,
+#cart .btn_right {
+    display: flex;
+}
+#cart .btn_left a {
+    padding: 8px 24px;
+    margin-right: 6px;
+    background: #fff;
+    border: 1px solid #D6D6D6;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    color: #333;
+}
+#cart .btn_left a:hover {
+    color: #666;
+}
+#cart .btn_right a {
+    padding: 16px 40px;
+    margin-top: 16px;
+    margin-left: 6px;
+    background: #fff;
+    border: 1px solid #D6D6D6;
+    border-radius: 15px;
+    color: #333;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+#cart .btn_right a:hover {
+    color: #666;
+}
+#cart .btn_right a:last-of-type {
+    background: #E65548;
+    color: #fff;
+}
+#cart .btn_right a:last-of-type:hover {
+    background: rgb(240, 36, 18);
+    color: #fff;
+}
+

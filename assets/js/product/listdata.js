@@ -31,35 +31,35 @@ const beef_list = [
 
 const pork_list = [
 {
-    link: "#",
+    link: "../product/product_1.html",
     preview: "../assets/img/product/1000001664_main_04.jpg",
     title: "목심 에어프라이어용 500g",
     price: "16,000",
     weight: "3,200"
 },
 {
-    link: "#",
+    link: "../product/product_2.html",
     preview: "../assets/img/product/1000001663_main_034.jpg",
     title: "칼집구이용 삼겹살 500g",
     price: "18,500",
     weight: "3,700"
 },
 {
-    link: "#",
+    link: "../product/product_3.html",
     preview: "../assets/img/product/1000001661_main_082.jpg",
     title: "목심바비큐용 500g",
     price: "17,000",
     weight: "3,400"
 },
 {
-    link: "#",
+    link: "../product/product_4.html",
     preview: "../assets/img/product/1000001660_main_06.jpg",
     title: "삼겹살 바비큐용 500g",
     price: "15,000",
     weight: "3,000"
 },
 {
-    link: "#",
+    link: "../product/product_5.html",
     preview: "../assets/img/product/1000001137_main_067.jpg",
     title: "토시살(칼집) 400g",
     price: "8,900",
