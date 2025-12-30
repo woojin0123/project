@@ -14,11 +14,13 @@
 }
 .seongwoo {
     width: 1520px;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 .seongwoo .top-image {
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    margin-top: 60px;
+    width: 100%;
 }
 .seongwoo .left-slider {
     width: 990px;
@@ -26,6 +28,7 @@
     overflow: hidden;
     border-radius: 30px;
     display: flex;
+    margin-right: 20px;
 }
 .seongwoo .left-slider img {
     width: 990px;

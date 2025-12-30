@@ -88,19 +88,20 @@ a {
 
 
 /* header */
-#header {
-    
+header.woojin {
+    width: 100%;
+    box-shadow: 0px 0px 3px rgba(121, 121, 121, 0.3);
     position: relative;
-    margin-bottom: 20px;
 }
-
+#header {
+    padding-bottom: 1px;
+}
 #header .inner {
     max-width: 1520px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
-    margin-bottom: 20px;
 }
 logo {
     position: absolute;
@@ -123,6 +124,7 @@ logo {
     align-items: center;
     justify-content: space-between;
     padding: 16px 0;
+    margin-bottom: 50px;
 }
 #gnb .menu_left {
     display: flex;

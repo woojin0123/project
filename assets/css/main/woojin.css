@@ -3,7 +3,6 @@
 } */
 .woojin {
     width: 100%;
-    max-width: 1520px;
     margin: 0 auto;   
     text-align: center;
     box-sizing: border-box;
@@ -190,12 +189,14 @@
 }
 /* sec3 */
 .woojin .sec3 {
-    width: 100%;
+    max-width: 1520px;
     position: relative;
-    margin: 60px 0;
+    margin: 0 auto;
+    margin-top: 60px;
 }
 
 .woojin .sec3 .qna {
+    width: 100%;
     display: flex;
     margin-bottom: 20px;
     color: #fff;
