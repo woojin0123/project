@@ -40,7 +40,7 @@
             </div>
           </div>
         </div>
-        <div class="order-wrapper">
+        <form class="order-wrapper">
           <aside>
             <div class="container">
               <h2>주문 상품 목록</h2>
@@ -86,6 +86,7 @@
                   name="sender_name"
                   id=""
                   value="조휘일"
+                  required
                 />
               </div>
               <div class="field-group">
@@ -96,6 +97,7 @@
                   name="sender_phone"
                   id=""
                   value="010-0000-0000"
+                  required
                 />
               </div>
               <div class="field-group">
@@ -144,31 +146,35 @@
                   type="text"
                   name="receiver_name"
                   id=""
-                  value="조휘일"
+                  required
                 />
               </div>
               <div class="field-group">
                 <label for="">받으실 곳</label>
-                <div class="field-group-col">
+                <div class="field-group-col postcode">
                   <input
                     class="form-input"
                     type="text"
                     name="receiver_postcode"
-                    id=""
+                    placeholder="우편번호"
+                    required
                   />
+                  <button class="btn-postcode">우편번호 찾기</button>
                 </div>
                 <div class="field-group">
                   <input
                     class="form-input"
                     type="text"
                     name="receiver_address1"
-                    id=""
+                    placeholder="주소"
+                    required
                   />
                   <input
                     class="form-input"
                     type="text"
                     name="receiver_address2"
-                    id=""
+                    placeholder="상세 주소"
+                    required
                   />
                 </div>
               </div>
@@ -179,7 +185,7 @@
                   type="tel"
                   name="receiver_phone"
                   id=""
-                  value="010-0000-0000"
+                  required
                 />
               </div>
             </div>
@@ -201,20 +207,64 @@
                 <span>20,400원</span>
               </div>
             </div>
-            <div class="container total-container">
-              <h2>결제 방법</h2>
-              <div>결제 수단...</div>
-              <div>결제 수단...</div>
-              <div>결제 수단...</div>
-              <div>...</div>
-            </div>
             <div class="container">
-              <div>구매 동의 영역...</div>
+              <h2>결제 방법</h2>
+              <ul class="field-group-col field-group-wrap pay-types">
+                <li class="field-group-col">
+                  <input
+                    class="form-radio"
+                    type="radio"
+                    name="payment-type"
+                    id="payment-type-card"
+                    value="0"
+                    disabled
+                  />
+                  <label for="payment-type-card">신용카드</label>
+                </li>
+                <li class="field-group-col">
+                  <input
+                    class="form-radio"
+                    type="radio"
+                    name="payment-type"
+                    id="payment-type-vbank"
+                    value="1"
+                    disabled
+                  />
+                  <label for="payment-type-vbank">가상계좌</label>
+                </li>
+                <li class="field-group-col">
+                  <input
+                    class="form-radio"
+                    type="radio"
+                    name="payment-type"
+                    id="payment-type-bank"
+                    value="2"
+                    checked
+                  />
+                  <label for="payment-type-bank">무통장 입금</label>
+                </li>
+              </ul>
+            </div>
+            <div class="container term">
+              <div class="field-group-col">
+                <input
+                  type="checkbox"
+                  name="term-agree"
+                  id="term-agree"
+                  class="form-checkbox"
+                  required
+                />
+                <label for="term-agree"
+                  ><strong>(필수)</strong> 구매하실 상품의 결제 정보를
+                  확인하였으며, 구매 진행에 동의합니다.</label
+                >
+              </div>
               <button class="btn-order">결제</button>
             </div>
           </aside>
-        </div>
+        </form>
       </div>
+      <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
       <script src="/assets/js/orders/new_order.js"></script>
     </main>
   </body>

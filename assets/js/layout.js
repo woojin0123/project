@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="top_link">
                         <a href="#">로그인</a>
                         <a href="#">회원가입</a>
-                        <a href="#">고객센터</a>
+                        <a href="/service/service.html">고객센터</a>
                         <a href=""><img src="/assets/img/layout/mu_coupon_icon.svg" alt="쿠폰"></a>
-                        <a href=""><img src="/assets/img/layout/mu_mypage_icon.svg" alt="마이페이지"></a>
+                        <a href="/member/mypage.html"><img src="/assets/img/layout/mu_mypage_icon.svg" alt="마이페이지"></a>
                         <a href="/orders/cart.html"><img src="/assets/img/layout/mu_basket_icon.svg" alt="장바구니"></a>
                     </div> <!-- //top_link -->
                 </div> <!-- //inner -->
@@ -83,10 +83,10 @@ document.addEventListener("DOMContentLoaded", () => {
                         <a href="index.html"><img src="/assets/img/layout/0c3d6c35bd0388d73a8ca987211f0061_35031.svg" alt="하단 로고"></a>
                         <div class="footer_bottom">
                             <div class="service">
-                                <a href="https://www.dodrammall.com/service/agreement.php">이용약관</a>
-                                <a href="https://www.dodrammall.com/service/private.php">개인정보처리방침</a>
-                                <a href="https://www.dodrammall.com/service/guide.php">쇼핑몰이용안내</a>
-                                <a href="https://www.dodrammall.com/service/index.php">고객센터</a>
+                                <a href="/service/agreement.html">이용약관</a>
+                                <a href="#/service/private.html">개인정보처리방침</a>
+                                <a href="/service/guide.html">쇼핑몰이용안내</a>
+                                <a href="/service/service.html">고객센터</a>
                             </div> <!-- //service -->
                             <div class="info">
                                 <p>주소:경기도 이천시 부발읍 경충대로 1917 도드람테마파크 상호:도드람양돈협동조합<br>조합장:박광욱 사업자등록번호: 126-82-10806 <a
@@ -135,11 +135,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 <img src="/assets/img/main/scl_bt.gif" alt="우측 클릭 버튼">
             </div>
             <div class="menu-list">
-                <a href="/notice/notice_list.html" class="icon-box">
+                <a href="/service/notice/notice_list.html" class="icon-box">
                     <img src="/assets/img/main/scl_icon01.png">
                     <span>공지사항</span>
                 </a>
-                <a class="icon-box">
+                <a href="/service/service.html" class="icon-box">
                     <img src="/assets/img/main/scl_icon02.png">
                     <span>고객센터</span>
                 </a>
@@ -151,7 +151,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <img src="/assets/img/main/scl_icon04.png">
                     <span>마이쇼핑</span>
                 </a>
-                <a class="icon-box">
+                <a href="/orders/cart.html" class="icon-box">
                     <img src="/assets/img/main/scl_icon05.png">
                     <span>장바구니</span>
                 </a>

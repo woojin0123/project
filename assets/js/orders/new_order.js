@@ -12,9 +12,9 @@
   /* prettier-ignore */
   function fillReceiver(name = "", postcode = "", address1 = "", address2 = "", phone = "") {
     $receiver_name.val(name);
-    $receiver_postcode.val(postcode);
-    $receiver_address1.val(address1);
-    $receiver_address2.val(address2);
+    // $receiver_postcode.val(postcode);
+    // $receiver_address1.val(address1);
+    // $receiver_address2.val(address2);
     $receiver_phone.val(phone);
   }
 
@@ -26,9 +26,13 @@
     switch (receiverInfoType) {
       case 0:
         fillReceiver();
+        $receiver_name.removeAttr("disabled");
+        $receiver_phone.removeAttr("disabled");
         break;
       case 1:
         fillReceiverBySender();
+        $receiver_name.attr("disabled", true);
+        $receiver_phone.attr("disabled", true);
         break;
     }
   }
@@ -41,5 +45,42 @@
   $("[name=delivery_info_type]").change((e) => {
     receiverInfoType = Number($(e.currentTarget).val());
     updateReceiver();
+  });
+
+  updateReceiver();
+
+  const postCodeHandler = new daum.Postcode({
+    oncomplete: function (data) {
+      const { zonecode, address } = data;
+
+      $receiver_postcode.val(zonecode);
+      $receiver_address1.val(address);
+      $receiver_address2.focus();
+    },
+  });
+
+  $(".btn-postcode").click((e) => {
+    e.preventDefault();
+    postCodeHandler.open();
+  });
+
+  let popupWindow = null;
+
+  $("form.order-wrapper").submit((e) => {
+    e.preventDefault();
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    const dataObj = Object.fromEntries(formData.entries());
+
+    popupWindow = window.open(
+      "payment_popup.html",
+      "payment_popup",
+      "toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=710"
+    );
+
+    popupWindow.onload = () => {
+      popupWindow.receiveData(dataObj);
+    };
   });
 })();
