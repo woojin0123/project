@@ -1,28 +1,26 @@
 @charset "utf-8";
 
-/* main body {
+.seongwoo body {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 
     margin: 0;
     padding: 0;
-} */
+}
 
 .seongwoo ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-/* main {
-    width: 1520px;
-    margin: 0 auto;
-} */
 .seongwoo {
     width: 1520px;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 .seongwoo .top-image {
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    margin-top: 60px;
+    width: 100%;
 }
 .seongwoo .left-slider {
     width: 990px;
@@ -30,6 +28,7 @@
     overflow: hidden;
     border-radius: 30px;
     display: flex;
+    margin-right: 20px;
 }
 .seongwoo .left-slider img {
     width: 990px;
@@ -47,7 +46,7 @@
     height: 650px;
 }
 /* 슬라이드 */
-.seongwoo .left-slides , .seongwoo .right-slides{
+.seongwoo .left-slides , .right-slides{
     display: flex;
     width: calc(100% * 5);
     height: 100%;
@@ -83,7 +82,7 @@
 }
 /*기존이미지 변경시 js 사용하던지 div로 태그변경해서 해볼것*/
 
-.seongwoo .main-recommend img , .seongwoo .main-gift-set img{
+.seongwoo .main-recommend img , .main-gift-set img{
     width: 58px;
     height: 58px;
 }
@@ -91,7 +90,7 @@
     width: 535px;
     height: 666px;
 }
-.seongwoo h1 , .seongwoo main p {
+.seongwoo h1 , .seongwoo p {
     text-align: center;
 }
 .seongwoo .sub-menu-list {
@@ -141,18 +140,21 @@
     width: 290px;
     height: 360px;
 }
-.seongwoo .menu-list{
-    position: relative;
-    width: 250px;
-    height: 300px;
-    border:1px solid red;
+
+/* chat */
+.seongwoo .sub-menu-wrap {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px; /* 좌우간 간격 */
 }
-.seongwoo .menu-list img {
-    position: absolute;
+
+
+/* 사이드메뉴 end */
+.seongwoo .menu-list  {
     width: 50px;
     height: 50px;
 }
-.seongwoo .menu-list li:nth-of-type(1) .icon-box img  {
+.seongwoo .menu-list li:nth-of-type(1)   {
     top: 10px;
     left: 20px;
 }
@@ -175,6 +177,8 @@
 .seongwoo .menu-list li:nth-of-type(6) .icon-box img  {
     top: 170px;
     left: 20px;
+    width: 100px;
+    height: 58px;
 }
 
 
@@ -211,13 +215,6 @@
     padding:30px 0 37px 60px
 }
 
-
-/* chat */
-.seongwoo .sub-menu-wrap {
-    display: flex;
-    align-items: flex-start;
-    gap: 40px; /* 좌우간 간격 */
-}
 
 /* 왼쪽 메뉴 영역 */
 .seongwoo .sub-menu-left {
