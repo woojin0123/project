@@ -2975,7 +2975,7 @@ body.is-menu-visible #menu .close {
 
 	#main .inner .top .text h1 {
 		padding: 0 10px;
-		font-size: 1.9em;
+		font-size: 1.8em;
 	}
 
 	#main .inner .top .text h2 {
@@ -3020,12 +3020,12 @@ body.is-menu-visible #menu .close {
 	/* css 기록 */
 	#header .title {
 		letter-spacing: 0.13em;
-		font-size: 1em;
+		font-size: 1.5em;
 		text-align: left;
 	}
 
 	#header .name {
-		font-size: 1.1em;
+		font-size: 1.6em;
 	}
 
 	#header .inner {
@@ -3042,16 +3042,16 @@ body.is-menu-visible #menu .close {
 
 	#main .inner .top .text h1 {
 		padding: 0 10px;
-		font-size: 1.3em;
+		font-size: 1.7em;
 	}
 
 	#main .inner .top .text h2 {
-		padding: 10px;
-		font-size: 0.85em;
-		padding-top: 10px;
+		padding: 10px 40px;
+		font-size: 0.8em;
 	}
 
 	#main .inner .top .text p {
+		padding: 0 20px;
 		font-size: 0.9em;
 	}
 
