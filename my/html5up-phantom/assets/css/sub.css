@@ -1166,3 +1166,27 @@ body.is-menu-visible #menu .close {
 }
 
 
+.magazine .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(100px, 1fr)
+  ); /* 반응형 열 배치 */
+  gap: 8px; /* 이미지 사이 간격 */
+  padding: 10px 0;
+  border-radius: 4px;
+}
+
+.magazine .gallery-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover; /* 이미지가 비율에 맞게 꽉 차도록 설정 */
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.magazine .gallery-item img:hover {
+  opacity: 0.8; /* 마우스 올렸을 때 효과 */
+}
+
+
