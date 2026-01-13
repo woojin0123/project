@@ -22,4 +22,8 @@ $(document).ready(function() {
 
         $wrapper.css('transform', `translateX(${-positions[target] * moveDistance}px)`);
     });
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> f20a78e1a62e8a950218d2afeb25352a25819d47
