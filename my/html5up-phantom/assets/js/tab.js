@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 $(document).ready(function() {
     $('.tab-link').click(function(e) {
         e.stopPropagation(); // 중첩 탭 클릭 시 상위로 이벤트 전파 방지
@@ -16,19 +15,3 @@ $(document).ready(function() {
         $('#' + tab_id).addClass('current');
     });
 });
-=======
-$(document).ready(function(){
-	
-	$('ul.tabs li').click(function(){
-		var tab_id = $(this).attr('data-tab');
-
-		$('ul.tabs li').removeClass('current');
-		$('.tab-content').removeClass('current');
-
-		
-		$(this).addClass('current');
-		$("#"+tab_id).addClass('current');
-	})
-
-})
->>>>>>> f20a78e1a62e8a950218d2afeb25352a25819d47
