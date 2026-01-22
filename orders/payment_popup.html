@@ -128,10 +128,21 @@
         window.close();
       }
 
-      let cancelTimeoutId = setTimeout(
-        setStatusCancelTimeout,
-        1000 * 60 * 60 * 10 /* 10분 */
-      );
+      const cancelTime = 1000 * 60 * 10;
+      let cancelExpireAt = Date.now() + cancelTime;
+      let cancelTimeoutId = setTimeout(setStatusCancelTimeout, cancelTime);
+
+      document.addEventListener("visibilitychange", () => {
+        if (!cancelTimeoutId) return;
+        if (document.visibilityState != "visible") return;
+        if (Date.now() < cancelExpireAt) return;
+        setStatusCancelTimeout();
+      });
+
+      function stopCancelTimer() {
+        clearTimeout(cancelTimeoutId);
+        cancelTimeoutId = null;
+      }
 
       const main = document.querySelector("main");
       const payStatus = document.getElementById("payment-status");
@@ -191,7 +202,7 @@
       }
 
       function setStatusComplete() {
-        clearTimeout(cancelTimeoutId);
+        stopCancelTimer();
         const status = "complete";
         payStatus.classList = status;
         swapIcon(getCheckSvg());
@@ -215,7 +226,7 @@
       }
 
       function setStatusCancel(msg1 = "", msg2 = "") {
-        clearTimeout(cancelTimeoutId);
+        stopCancelTimer();
         const status = "cancel";
         payStatus.classList = status;
         swapIcon(getWarningSvg());

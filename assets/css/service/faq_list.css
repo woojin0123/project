@@ -1,84 +1,5 @@
 @charset "UTF-8";
 @import url(/assets/css/service/service_common.css);
-/* reset */
-body,
-p,
-h3,
-h2,
-h1 {
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-ul,
-li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-#minho-faq .location-wrap {
-  margin-bottom: 40px;
-  border-bottom: 1px solid #e83828;
-}
-
-#minho-faq .location-con {
-  width: 1260px;
-  margin: 0 323px;
-  padding: 20px 0;
-  color: #787878;
-}
-#minho-faq .location-con a {
-  color: #787878;
-}
-
-
-/* faq list-box */
-
-#minho-faq .side-box-t {
-  margin-bottom: 150px;
-}
-
-#minho-faq .side-box-menu {
-  border-top: 2px solid #e83828;
-  padding: 20px 10px 20px 0;
-}
-
-#minho-faq .side-box-menu li {
-  margin-top: 15px;
-  font-size: 14px;
-}
-
-#minho-faq .side-box-menu li a {
-  color: #787878;
-}
-
-#minho-faq .side-box-menu li a:hover {
-  color: #e83828;
-}
-
-#minho-faq .side-box-b div {
-  margin-bottom: 50px;
-  gap: 5px;
-}
-
-#minho-faq .side-info {
-  display: flex;
-  flex-direction: column;
-  padding-top: 20px;
-  border-top: 2px solid #e83828;
-  color: #787878;
-  font-size: 12px;
-}
-
-#minho-faq .side-box-b strong {
-  color: #e83828;
-  font-size: 15px;
-}
 
 /* faq .board-box */
 #minho-faq .search-box {
@@ -153,10 +74,15 @@ li {
   display: flex;
   gap: 20px;
 }
+#minho-faq .faq-content-list ul .active{
+   color:#e83828;
+}
+
 #minho-faq .faq-content-list ul li:hover a{
   color:#e83828;
-
 }
+
+
 
 #minho-faq .faq-content-list ul li:not(:last-child)::after {
   content: "";
@@ -202,13 +128,18 @@ li {
 #minho-faq td.faq-cell {
   text-align: left;
 }
+#minho-faq td.faq-cell a:hover{
+  text-decoration: underline;
+}
+
+
 #minho-faq td.faq-cell::before {
   content: "";
   display: inline-block;
   width: 16px;
   height: 16px;
-  margin-right: 8px;
-  background: url("/assets/img/faq/icon_qna_q.png") no-repeat center;
+  margin-right: 15px;
+  background: url("/assets/img/service/icon_qna_q.png") no-repeat center;
   background-size: contain;
   vertical-align: middle;
 }

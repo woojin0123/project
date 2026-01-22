@@ -109,35 +109,66 @@ body{
     display: inherit;
 }
 
+#product img {
+    object-fit: contain;
+}
 #product .pork_container,
-#product .beef_container {
+#product .beef_container, 
+#product .sale_container,
+#product .best_container,
+#product .simple_container,
+#product .giftset_container,
+#product .brand_container,
+#product .new_container {
     margin-top: 50px;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
+    /* grid-template-columns: repeat(4, 1fr);  */
+    grid-template-columns: repeat(auto-fit, 250px);
     gap: 30px; 
+    
 }
 #product .pork_container .preview,
-#product .beef_container .preview {
-    width: 100%;
+#product .beef_container .preview,
+#product .sale_container .preview,
+#product .best_container .preview,
+#product .simple_container .preview,
+#product .giftset_container .preview,
+#product .brand_container .preview,
+#product .new_container .preview {
+    /* width: 100%; */
+    width: 240px;
+    overflow: hidden;
+    height: 300px;
+    border-radius: 15px 15px 0 0;
+    background-color: #fff;
+    overflow: hidden;
+}
+#product .meat {
+    width: 240px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
 }
-
 #product .meat_text {
     margin-top: 10px;
     text-align: left;
+    padding: 0 5px;
 }
 #product .meat_text h3 {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 300;
+    padding: 0 1px;
+    
 }
 #product .meat .price {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: bold;
+    padding: 0 5px;
 }
 #product .price span {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     font-weight: 300;
     color: #666;
+    padding: 0 5px;
 }
